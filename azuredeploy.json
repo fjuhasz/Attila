@@ -165,7 +165,7 @@
       "properties": {
         "hardwareProfile": {
           "vmSize": "[variables('vmSize')]"
-        },
+        }, 
         "osProfile": {
           "computerName": "[variables('vmName')]",
           "adminUsername": "[parameters('adminUsername')]",
