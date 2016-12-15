@@ -33,7 +33,7 @@
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
       }
     }
-	"DesiredLocation": {
+	"Location": {
 	"type": "string",
       "defaultValue": "australiasoutheast",
       "allowedValues": [
