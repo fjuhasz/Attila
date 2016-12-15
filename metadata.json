@@ -1,8 +1,8 @@
 {
   "itemDisplayName": "Deploy a simple Ubuntu VM  for test purposes",
   "icon": "Ubuntu",
-  "description": "This template allows you to deploy a simple Ubuntu VM using a few different options for the Ubuntu version, using the latest patched version. This will deploy a D1 szie VM in the resource group location and return the FQDN of the VM.",
-  "summary": "This template takes a minimum amount of parameters and deploys a Linux VM, using the latest patched version.",
-  "githubUsername": "bmoore-msft",
-  "dateUpdated": "2016-09-20"
+  "description": "This template allows you to deploy a simple Ubuntu VM using a few different options for the Ubuntu versions and locations. This will deploy a A4 size machines.",
+  "summary": "This template takes a minimum amount of parameters and deploys a Ubuntu VM, using the latest patched version. Source https://github.com/Azure/azure-quickstart-templates/blob/master/101-vm-simple-linux/metadata.json",
+  "githubUsername": "fjuhasz",
+  "dateUpdated": "2016-12-15"
 }
