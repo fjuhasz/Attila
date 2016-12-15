@@ -63,7 +63,7 @@
 	}
   },
   "variables": {
-    "storageAccountName": "[concat( parameters('location'), 'stgaccount')]",
+    "storageAccountName": "[concat( parameters('location'), 'stg')]",
     "dataDisk1VhdName":  "[concat( parameters('location'), 'datadisk1')]",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
