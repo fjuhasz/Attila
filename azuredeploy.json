@@ -14,10 +14,18 @@
         "description": "Password for the Virtual Machine."
       }
     },
-    "dnsLabelPrefix": {
+    "vmName": {
+	"type": "string",
+      "metadata": {
+        "description": "Unique name of the virtual machine"
+		}
+	  },
+	
+	
+	"dnsLabelPrefix": {
       "type": "string",
       "metadata": {
-        "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
+        "description": "Unique DNS Name prefix for the Public IP used to access the Virtual Machine. The FQDN will be the contatenated result of this and the vmname value with a - between them."
       }
     },
     "ubuntuOSVersion": {
@@ -76,7 +84,6 @@
     "publicIPAddressName": "[concat( parameters('location'), 'PublicIP')]",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
-    "vmName": "[concat( parameters('location'), 'TesztUbuntuVM')]",
     "vmSize": "Standard_A4",
     "virtualNetworkName": "[concat( parameters('location'), 'VNET')]",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
@@ -102,7 +109,7 @@
       "properties": {
         "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
         "dnsSettings": {
-          "domainNameLabel": "[parameters('dnsLabelPrefix')]"
+          "domainNameLabel": "[concat(parameters ('vmName'), '-', parameters('dnsLabelPrefix'))]"
         }
       }
     },
