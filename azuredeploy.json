@@ -33,6 +33,33 @@
         "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
       }
     }
+	"DesiredLocation":{
+	"type": "string",
+      "defaultValue": "australiasoutheast",
+      "allowedValues": [
+		"eastasia",
+		"southeastasia",
+		"centralus",
+		"eastus",    
+		"eastus2",
+		"westus",
+		"northcentralus",
+		"southcentralus",
+		"northeurope",
+		"westeurope",
+		"japanwest",
+		"japaneast",
+		"brazilsouth",
+		"australiaeast",
+		"australiasoutheast",
+		"canadacentral",
+		"canadaeast",
+		"uksouth",   
+		"ukwest",
+		"westcentralus",
+		"westus2",
+
+	}
   },
   "variables": {
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'salinuxvm')]",
