@@ -73,7 +73,7 @@
     "subnetName": "[concat( parameters('location'), 'Subnet')]",
     "subnetPrefix": "10.0.0.0/24",
     "storageAccountType": "Standard_LRS",
-    "publicIPAddressName": "[concat( parameters('location)), 'PublicIP')]",
+    "publicIPAddressName": "[concat( parameters('location), 'PublicIP')]",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
     "vmName": "[concat( parameters('location'), 'TesztUbuntuVM')]",
