@@ -1,7 +1,7 @@
 This is a very simple deployment of an Ubuntu VM based on this source 
 https://github.com/Azure/azure-quickstart-templates/tree/master/101-vm-simple-linux and a bit customized.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://github.com/fjuhasz/Attila/azuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffjuhasz%2Fattila%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
