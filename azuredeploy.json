@@ -64,7 +64,7 @@
   },
   "variables": {
     "storageAccountName": "[concat(parameters('location')), 'stgaccount')]",
-    "dataDisk1VhdName":  "[concat(parameters('location')), 'datadisk1')],
+    "dataDisk1VhdName":  "[concat(parameters('location')), 'datadisk1')]",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
     "OSDiskName": "osdiskforlinuxsimple",
